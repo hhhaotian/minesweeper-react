@@ -1,0 +1,15 @@
+.Cell{
+    border-width: 2px;
+    border-style: solid;
+    border-top-color: white;
+    border-left-color: white;
+    border-right-color: #7b7b7b;
+    border-bottom-color: #7b7b7b;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+
+    &:hover{
+        border: 1px solid #7b7b7b;
+    }
+}

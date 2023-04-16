@@ -1,0 +1,36 @@
+@import '../../style/index.scss';
+
+.App{
+    background-color: #c2c2c2;
+    padding: 16px;
+    @include borders
+}
+
+.Header{
+    background-color: #c0c0c0;
+    padding: 10px 12px;
+    @include borders(#7b7b7b, white);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Face{
+    width: 52px;
+    height: 52px;
+    font-size: 35px;
+    @include borders(white, #7b7b7b);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Body{
+    margin-top: 16px;
+    @include borders(#7b7b7b, white);
+
+    .BorderRows{
+        display: flex;
+    }
+}
