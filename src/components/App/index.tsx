@@ -21,7 +21,11 @@ const App: React.FC = () => {
         cells.map((row, rowIndex) => (
             <div className="BorderRows" key={rowIndex}>
                 {row.map((col, colIndex) => (
-                    <CellElement key={rowIndex.toString() + ' ' + colIndex.toString()} />
+                    <CellElement
+                        key={`${rowIndex} - ${colIndex}`}
+                        value={col.value}
+                        status={col.status}
+                    />
                 ))}
             </div>
         ))
