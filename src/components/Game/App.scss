@@ -23,6 +23,11 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+
+    &:active{
+        @include borders(#7b7b7b, white)
+    }
 }
 
 
