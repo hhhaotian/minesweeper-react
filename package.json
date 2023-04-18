@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "vitest --run  --reporter verbose"
+    "test": "cypress run",
+    "test-component": "cypress run --component"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.4",
