@@ -1,3 +1,6 @@
+@import '../../style/index.scss';
+
+
 *{
     box-sizing: border-box;
 }
@@ -9,3 +12,8 @@ body{
     height: 100vh;
 }
 
+.App{
+    background-color: #c2c2c2;
+    padding: 16px;
+    @include borders
+}

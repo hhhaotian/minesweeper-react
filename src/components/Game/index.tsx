@@ -5,7 +5,7 @@ import CellElement from "../Cell";
 import { createNewGame, getAllAvaliableCellsClicked, isWin, showBombs } from "../../utlis";
 import { useSelector } from "react-redux";
 
-import "./App.scss"
+import "./Game.scss"
 import { CellType, cellStatus, cellValue } from "../../types";
 
 // const ROWS = 9

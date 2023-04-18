@@ -1,6 +1,6 @@
 import { cellValue, cellStatus, CellType, adjacentCellsReturn } from "../types"
 
-const generateCells = (rows:number, cols:number) => {
+export const generateCells = (rows:number, cols:number):CellType[][] => {
     const cells = []
     for(let i=0; i < rows; i++){
         const row = []
@@ -15,7 +15,7 @@ const generateCells = (rows:number, cols:number) => {
     return cells
 }
 
-const randomBombs = (cells: CellType[][], bombs:number, rows: number, cols:number) => {
+export const randomBombs = (cells: CellType[][], bombs:number, rows: number, cols:number):CellType[][] => {
     let count = 0
     const newCells = [...cells]
     while(count < bombs){
